@@ -1,0 +1,58 @@
+@import "~bootstrap/scss/bootstrap"
+
+html
+  overflow-x: hidden
+  margin-right: calc(-1 * (100vw - 100%))
+
+.product-card
+  width: 30%
+  &__img
+    height: 250px
+    text-align: center
+    img
+      height: 100%
+      width: auto
+  &__body
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    min-height: 150px
+
+
+.preloader
+  width: 100px
+
+.preloaderWrap
+  text-align: center
+  margin: 30px auto 0
+
+
+.popup
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    position: absolute
+    &__img
+      height: 300px
+      text-align: center
+      img
+        width: auto
+    &__wrap
+      position: fixed
+      width: 100vw
+      height: 100vh
+      top: 0
+      bottom: 0
+      right: 0
+      left: 0
+      background: rgba(0,0,0,.7)
+      z-index: 1
+
+
+@media screen and (max-width: 992px)
+    .product-card
+      width: 45%
+
+@media screen and (max-width: 768px)
+  .product-card
+    width: 100%
